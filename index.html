@@ -12,13 +12,36 @@
             text-align: center;
             color: white;
         }
+
+        button{
+            padding: 15px;
+        }
     </style>
+       
+    <script>
+        function addText(){
+            var bla = document.getElementById('texto').value;
+            console.log(bla);
+
+            var li = document.getElementById('lista').innerHTML;
+            console.log(li);
+
+            li = li +'<li>'+bla+'</li>';
+
+            document.getElementById('lista').innerHTML = li;
+        }
+    </script>
 </head>
 <body>
     <h1>Sagittarius-A-Estrela</h1>
 
-    <h2>Abel Duarte</h2>
-    <h2>Max Ruy</h2>
-    <h2>Marcelo Machado</h2>
+    <ul id="lista">
+        <li>Abel</li>
+        <li>Marcelo</li>
+        <li>Max</li>
+    </ul>
+    
+    <input type="text" id="texto">
+    <button onclick="addText()">Add Amigo</button>
 </body>
 </html>
