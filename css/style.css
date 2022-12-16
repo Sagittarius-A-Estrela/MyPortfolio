@@ -1,0 +1,91 @@
+body{
+    
+    background-image: url(img/universe.jpg);
+}
+
+.home-content{
+    background: rgba( 255, 255, 255, 0.1 );
+    backdrop-filter: blur( 0.2px );
+    border-radius: 5px;
+    width: 60%;
+    height: 350px;
+    margin: auto;
+    margin-top: 125px;
+}
+
+/* display: inline-block */
+.close, .maximize, .minimize, .home-title{
+    display: inline-block;
+}
+
+header{
+    position: relative;
+    width: 100%;
+    padding: 2px;
+    margin-left: 5px;
+    box-sizing: border-box;
+}
+
+.close, .maximize, .minimize{
+    width: 8px;
+    height: 8px;
+    border-radius: 100%;
+}
+
+.home-title{
+    position: absolute;
+    left: 40%;
+    color: white;
+}
+
+main{
+    position: relative;
+}
+
+.home-presentation{
+    width: 50%;
+    padding: 60px;
+    box-sizing: border-box;
+}
+
+.home-info h2, p{
+    font-size: 32px;
+    color: white;
+}
+
+.home-info strong{
+    color: blue;
+}
+
+.home-presentation button{
+    background-color: blue;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 15px;
+}
+
+.home-image{
+    position: absolute;
+    top: 50px;
+    right: 100px;
+    background: rgba( 255, 255, 255, 0.2 );
+    width: 20%;
+    border-radius: 70%;
+}
+
+footer{
+    width: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 0;
+}
+
+footer a{
+    color: white;
+    font-size: 8px;
+    margin-left: 5px;
+    text-decoration: none;
+}

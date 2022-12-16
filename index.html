@@ -4,44 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagittarius-A-Estrela</title>
 
-    <style>
-        body{
-            background-color: black;
-            text-align: center;
-            color: white;
-        }
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
 
-        button{
-            padding: 15px;
-        }
-    </style>
-       
-    <script>
-        function addText(){
-            var bla = document.getElementById('texto').value;
-            console.log(bla);
+    <script src="script/script.js"></script>
 
-            var li = document.getElementById('lista').innerHTML;
-            console.log(li);
+    <title>Sagittarius-A*</title>
 
-            li = li +'<li>'+bla+'</li>';
-
-            document.getElementById('lista').innerHTML = li;
-        }
-    </script>
 </head>
 <body>
-    <h1>Sagittarius-A-Estrela</h1>
-
-    <ul id="lista">
-        <li>Abel</li>
-        <li>Marcelo</li>
-        <li>Max</li>
-    </ul>
-    
-    <input type="text" id="texto">
-    <button onclick="addText()">Add Amigo</button>
+    <div class="home-content">
+        <header>
+            <div class="close" style="background-color: red;"></div>
+            <div class="maximize" style="background-color: orange;"></div>
+            <div class="minimize" style="background-color: green;"></div>
+            <h1 class="home-title">Sagittarius-A-Estrela</h1>
+        </header>
+        <main>
+            <section class="home-presentation">
+                <div class="home-info">
+                    <h2>Olá, eu sou <strong>Mateus</strong>.</h2>
+                    <p>Sera um prazer recebe-lo aqui</p>
+                </div>
+                <button>Contate-me</button>
+            </section>
+            <img src="img/perfil.png" alt="" class="home-image">
+        </main>
+        <footer>
+            <a href="https://github.com/Sagittarius-A-Estrela" class="home-git">GitHub</a>
+            <a href="https://br.linkedin.com" class="home-linkedin">Linkedin</a>
+        </footer>
+    </div>
 </body>
 </html>
