@@ -1,90 +1,85 @@
 body{
+    background-color: black;
     background-image: url(../img/universe.jpg);
 }
 
 .home-content{
-    background: rgba( 255, 255, 255, 0.1 );
+    background: rgba( 255, 255, 255, 0.25);
     backdrop-filter: blur( 0.2px );
     border-radius: 5px;
-    width: 60%;
-    height: 350px;
+    width: 50%;
     margin: auto;
     margin-top: 125px;
-}
-
-/* display: inline-block */
-.close, .maximize, .minimize, .home-title{
-    display: inline-block;
+    box-shadow: 15px 15px 25px black;
 }
 
 header{
     position: relative;
     width: 100%;
-    padding: 2px;
-    margin-left: 5px;
+    padding: 7px;
+    border-bottom: 1px solid rgba( 255, 255, 255, 0.2);
     box-sizing: border-box;
 }
 
-.close, .maximize, .minimize{
-    width: 8px;
-    height: 8px;
+.btn-close, .btn-maximize, .btn-minimize{
+    display: inline-block;
+    margin-right: 7px;
+    width: 15px;
+    height: 15px;
     border-radius: 100%;
 }
 
-.home-title{
-    position: absolute;
-    left: 40%;
+header input{
+    display: none;
+}
+
+.nav-title{
     color: white;
+    text-align: center;
+    margin-top: -19px;
 }
 
 main{
     position: relative;
-}
-
-.home-presentation{
-    width: 50%;
-    padding: 60px;
-    box-sizing: border-box;
-}
-
-.home-info h2, p{
-    font-size: 32px;
-    color: white;
-}
-
-.home-info strong{
-    color: blue;
-}
-
-.home-presentation button{
-    background-color: blue;
-    border: none;
-    color: white;
-    border-radius: 5px;
-    padding: 5px;
-    margin-top: 15px;
-}
-
-.home-image{
-    position: absolute;
-    top: 50px;
-    right: 100px;
-    background: rgba( 255, 255, 255, 0.2 );
-    width: 20%;
-    border-radius: 70%;
-}
-
-footer{
     width: 100%;
-    padding: 2px;
-    box-sizing: border-box;
-    position: absolute;
-    bottom: 0;
 }
 
-footer a{
+main section{
+    width: 65%;
+    padding: 8%;
+    box-sizing: border-box;
+}
+
+main h2, p{
     color: white;
-    font-size: 8px;
-    margin-left: 5px;
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+main h2 strong, p strong{
+    color: orange;
+    font-weight: bolder;
+}
+
+main p{
+    margin-left: 30px;
+    margin-bottom: 30px;
+}
+
+main a{
+    color: white;
     text-decoration: none;
+    background-color: darkblue;
+    padding: 10px 25px 10px 25px;
+    border-radius: 5px;
+}
+
+main img{
+    position: absolute;
+    width: 200px;
+    right: 45px;
+    top: 20px;
+    border-radius: 100%;
+    border-bottom: 3px solid cyan;
+    border-right: 3px solid cyan;
 }

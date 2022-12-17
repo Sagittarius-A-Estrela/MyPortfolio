@@ -14,27 +14,37 @@
 
 </head>
 <body>
-    <div class="home-content">
-        <header>
-            <div class="close" style="background-color: red;"></div>
-            <div class="maximize" style="background-color: orange;"></div>
-            <div class="minimize" style="background-color: green;"></div>
-            <h1 class="home-title">Sagittarius-A-Estrela</h1>
+    <div class="home-content" id="content">
+        <header id="header-content">
+            <input type="checkbox" name="" id="close" onclick="callClose()">
+            <label for="close">
+                <div class="btn-close" style="background-color: red;"></div>
+            </label>
+
+            <input type="checkbox" name="" id="maximize" onclick="callMaximize()">
+            <label for="maximize">
+                <div class="btn-maximize" style="background-color: orange;"></div>
+            </label>
+
+            <input type="checkbox" name="" id="minimize" onclick="callMinimize()">
+            <label for="minimize">
+                <div class="btn-minimize" style="background-color: green;"></div>
+            </label>
+            <h1 class="nav-title">Sagittarius-A*</h1>
         </header>
-        <main>
-            <section class="home-presentation">
-                <div class="home-info">
-                    <h2>Olá, eu sou <strong>Mateus</strong>.</h2>
-                    <p>Sera um prazer recebe-lo aqui</p>
-                </div>
-                <button>Contate-me</button>
+
+        <main id="main-content">
+            <section>
+                <h2>Olá amigo, prazer eu sou <strong>Mateus</strong>.</h2>
+                <p>Bem vindo ao meu <strong>Portfolio Online</strong>.</p>
+
+                <a href="https://google.com.br">Navegar</a>
             </section>
-            <img src="img/perfil.png" alt="" class="home-image">
+
+            <img src="img/perfil.png" alt="">
         </main>
-        <footer>
-            <a href="https://github.com/Sagittarius-A-Estrela" class="home-git">GitHub</a>
-            <a href="https://br.linkedin.com" class="home-linkedin">Linkedin</a>
-        </footer>
+
+        <footer id="footer-content"></footer>
     </div>
 </body>
 </html>
