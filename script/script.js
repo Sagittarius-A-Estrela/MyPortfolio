@@ -5,12 +5,12 @@ $(document).ready(function(){
         setTimeout(location.reload.bind(location), 5000);
     }),
       
-    $(".control-maximized").click(function(){
+    $(".control-maximize").click(function(){
         $(".window").removeClass("window--minimized");
         $(".window").toggleClass("window--maximized");
     }),
   
-    $(".control-minimized").click(function(){
+    $(".control-minimize").click(function(){
         $(".window").removeClass("window--maximized");
         $(".window").toggleClass("window--minimized");
     });
