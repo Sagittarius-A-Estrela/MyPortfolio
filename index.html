@@ -5,46 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!--LINKS E DOCUMENTOS EXTERNOS-->
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="script/script.js"></script>
 
     <title>Sagittarius-A*</title>
-
 </head>
 <body>
-    <div class="home-content" id="content">
-        <header id="header-content">
-            <input type="checkbox" name="" id="close" onclick="callClose()">
-            <label for="close">
-                <div class="btn-close" style="background-color: red;"></div>
-            </label>
-
-            <input type="checkbox" name="" id="maximize" onclick="callMaximize()">
-            <label for="maximize">
-                <div class="btn-maximize" style="background-color: orange;"></div>
-            </label>
-
-            <input type="checkbox" name="" id="minimize" onclick="callMinimize()">
-            <label for="minimize">
-                <div class="btn-minimize" style="background-color: green;"></div>
-            </label>
-            <h1 class="nav-title">Sagittarius-A*</h1>
+    <section class="window">
+        <header class="window-header">
+            <nav class="window-controls">
+                <span class="control-item control-close js-close" style="background-color: red"></span>
+                <span class="control-item control-maximize js-maximize" style="background-color: orange"></span>
+                <span class="control-item control-minimize js-minimize" style="background-color: green"></span>
+            </nav>
         </header>
 
-        <main id="main-content">
-            <section>
-                <h2>Olá amigo, prazer eu sou <strong>Mateus</strong>.</h2>
-                <p>Bem vindo ao meu <strong>Portfolio Online</strong>.</p>
+        <main class="window-main"></main>
 
-                <a href="https://google.com.br">Navegar</a>
-            </section>
-
-            <img src="img/perfil.png" alt="">
-        </main>
-
-        <footer id="footer-content"></footer>
-    </div>
+        <footer class="window-footer"></footer>
+    </section>
 </body>
 </html>

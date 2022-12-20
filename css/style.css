@@ -1,85 +1,54 @@
-body{
+* { box-sizing: border-box; }
+
+body {
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: black;
-    background-image: url(../img/universe.jpg);
+    background: url("https://cdn.dribbble.com/users/293796/screenshots/10479688/media/49397751fc3553af75e26e71011a1bd7.gif");
+    background-size: cover;
+    overflow: hidden;
 }
 
-.home-content{
-    background: rgba( 255, 255, 255, 0.25);
-    backdrop-filter: blur( 0.2px );
-    border-radius: 5px;
-    width: 50%;
-    margin: auto;
-    margin-top: 125px;
-    box-shadow: 15px 15px 25px black;
+.window {
+    width: 450px;
+    height: 250px;
+    background-color: rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 2px rgba(0,0,0,.2);
 }
 
-header{
-    position: relative;
-    width: 100%;
-    padding: 7px;
-    border-bottom: 1px solid rgba( 255, 255, 255, 0.2);
-    box-sizing: border-box;
+.window-header {
+    height: 25px;
 }
 
-.btn-close, .btn-maximize, .btn-minimize{
-    display: inline-block;
-    margin-right: 7px;
+.window-controls {
+    display: flex;
+    height: 100%;
+    align-items: center;
+  }
+
+.window-controls .control-item{
     width: 15px;
     height: 15px;
     border-radius: 100%;
-}
+    margin-left: 4px;
+    cursor: pointer;
+  }
 
-header input{
-    display: none;
-}
+  .window--destroyed {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
 
-.nav-title{
-    color: white;
-    text-align: center;
-    margin-top: -19px;
-}
-
-main{
-    position: relative;
+  .window--maximized {
     width: 100%;
-}
+    flex-grow: 1;
+  }
 
-main section{
-    width: 65%;
-    padding: 8%;
-    box-sizing: border-box;
-}
-
-main h2, p{
-    color: white;
-    font-size: 36px;
-    margin-bottom: 10px;
-}
-
-main h2 strong, p strong{
-    color: orange;
-    font-weight: bolder;
-}
-
-main p{
-    margin-left: 30px;
-    margin-bottom: 30px;
-}
-
-main a{
-    color: white;
-    text-decoration: none;
-    background-color: darkblue;
-    padding: 10px 25px 10px 25px;
-    border-radius: 5px;
-}
-
-main img{
-    position: absolute;
-    width: 200px;
-    right: 45px;
-    top: 20px;
-    border-radius: 100%;
-    border-bottom: 3px solid cyan;
-    border-right: 3px solid cyan;
-}
+  .window--minimized {
+    height: 25px;
+    width: 180px;
+  }
