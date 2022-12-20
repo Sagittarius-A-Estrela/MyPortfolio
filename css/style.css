@@ -16,11 +16,12 @@ body {
     width: 450px;
     height: 250px;
     background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: 4px 4px 2px rgba(0,0,0,.2);
+    box-shadow: 4px 4px 2px rgba(0,0,0,.3);
 }
 
 .window-header {
     height: 25px;
+    background-color: darkgray;
 }
 
 .window-controls {
@@ -32,6 +33,7 @@ body {
 .window-controls .control-item{
     width: 15px;
     height: 15px;
+    border: 0.2px solid rgba(0,0,0,.4);
     border-radius: 100%;
     margin-left: 4px;
     cursor: pointer;
