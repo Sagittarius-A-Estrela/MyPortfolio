@@ -1,56 +1,87 @@
 * { box-sizing: border-box; }
 
 body {
-    display: flex;
-    min-height: 100vh;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    background-color: black;
-    background: url("https://cdn.dribbble.com/users/293796/screenshots/10479688/media/49397751fc3553af75e26e71011a1bd7.gif");
-    background-size: cover;
-    overflow: hidden;
+  display: flex;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+  background: url(../img/background.gif);
+  background-size: cover;
+  overflow: hidden;
 }
 
 .window {
-    width: 450px;
-    height: 250px;
-    background-color: rgba(0, 0, 0, 0.4);
-    box-shadow: 4px 4px 2px rgba(0,0,0,.3);
+  width: 60%;
+  height: 75vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 2px rgba(0,0,0,.3);
+  position: relative;
 }
 
 .window-header {
-    height: 25px;
-    background-color: darkgray;
+  height: 25px;
+  background-color: rgb(45, 45, 45);
 }
 
-.window-controls {
-    display: flex;
-    height: 100%;
-    align-items: center;
-  }
+.window-controls,
+.window-link {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
 
-.window-controls .control-item{
-    width: 15px;
-    height: 15px;
-    border: 0.2px solid rgba(0,0,0,.4);
-    border-radius: 100%;
-    margin-left: 4px;
-    cursor: pointer;
-  }
+.control-item {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
 
+.control-close,
+.control-maximize,
+.control-minimize {
+  border-radius: 100%;
+  margin-left: 10px;
+}
+
+.window-footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.link-item {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.social-media {
+  width: 15px;
+  filter: invert(100%);
+}
+
+.social-media:hover {
+  filter: invert(0);
+}
+
+  /* INTERAÇÃO COM JQUERY */
   .window--destroyed {
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
 
   .window--maximized {
-    width: 100%;
-    flex-grow: 1;
-  }
+  width: 100%;
+  flex-grow: 1;
+}
 
   .window--minimized {
-    height: 25px;
-    width: 180px;
-  }
+  height: 25px;
+  width: 180px;
+  
+}
+
+.window--content { display: none; }

@@ -8,10 +8,12 @@ $(document).ready(function(){
     $(".control-maximize").click(function(){
         $(".window").removeClass("window--minimized");
         $(".window").toggleClass("window--maximized");
+        $(".window-content").removeClass("window--content");
     }),
   
     $(".control-minimize").click(function(){
         $(".window").removeClass("window--maximized");
         $(".window").toggleClass("window--minimized");
+        $(".window-content").toggleClass("window--content");
     });
 });
